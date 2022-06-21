@@ -6,6 +6,10 @@ public class Stack<E> {
 		this.size=size;
 		data=(E[]) new Object [size];
 	}
+	public int size()
+	{
+		return (top+1);
+	}
 	public boolean isFull() {
 		if(top==(size-1)) {
 			return true;
@@ -23,8 +27,12 @@ public class Stack<E> {
 		}
 	}
 	public void push(E item) {
-		if(!isFull()) {
+		if(isFull()) {
 			System.out.println("Stack is full!");
+		}
+		else {
+			top++;
+			data[top] = item;
 		}
 	}
 	public E pop() {
