@@ -8,6 +8,9 @@ public class Main {
         stack.push(13);
         stack.push(14);
         stack.push(15);
+        System.out.println("Stack Size is:");
+        System.out.println( stack.size() );
+        System.out.println();
         System.out.println("Item in the Top is:");
         System.out.println( stack.peek() );
         System.out.println();
